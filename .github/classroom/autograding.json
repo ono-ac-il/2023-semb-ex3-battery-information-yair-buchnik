@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "First test",
+      "setup": "npm install",
+      "run": "NODE_NO_WARNINGS=1 port=15000 npx playwright test -g 'Lead Acid output'",
+      "input": "",
+      "output": "1 passed",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "test 2",
+      "setup": "",
+      "run": "NODE_NO_WARNINGS=1 port=15000 npx playwright test -g 'Li-ion Cobalt output'",
+      "input": "",
+      "output": "1 passed",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 25
+    }
+  ]
+}
