@@ -1,0 +1,28 @@
+function getBatteryInfo(){
+    const battery = document.getElementById("batter").value
+
+    var r;
+    switch (battery){
+        case "NiCd":
+        res = "Life Cycle: 1000, Cell Voltage: 1.2V, Peak Load Current: 20C, Toxicity: Very high";
+        break;
+
+        case "NiMH":
+        res = "Life Cycle: 300-500, Cell Voltage: 1.2V, Peak Load Current: 5C, Toxicity: Low";
+        break;
+
+        case "Li-ion-Cobalt":
+        result = "Life Cycle: 500-1000, Cell Voltage: 3.6V, Peak Load Current: >3C, Toxicity: Low";
+        break;
+
+        case "Lead-Acid":
+        res = "Life Cycle: 200-300, Cell Voltage: 2V, Peak Load Current: 5C, Toxicity: Very high";
+        break;
+    }
+
+    document.getElementById("result").innerHTML = r
+
+}
+const button = document.getElementById("btn");
+
+button.addEventListener('click', getBatteryInfo);
